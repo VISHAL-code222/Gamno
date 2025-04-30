@@ -1,0 +1,119 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e3d2d2;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(17, 16, 16, 0.2);
+  }
+  
+  .logo {
+    color: rgb(96, 72, 72);
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap; /* No text breaking */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+
+  }
+  .logo img{
+    width: 80px;
+    height: 70px;
+  }
+  
+  nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+  }
+  
+  nav .cart-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #1e90ff;
+    padding: 8px 14px;
+    border-radius: 8px;
+    overflow: hidden;
+    min-width: 90px;
+    text-align: center;
+    white-space: nowrap;
+    margin-right: 30px;
+  }
+  
+  nav .cart-link:hover {
+    background-color: #0f70d1;
+  }
+  
+  .cart-count-badge {
+    position: absolute;
+    top: -1px;
+    right: 1px;
+    background-color: red;
+    color: white;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* --- Responsive Media Queries --- */
+  
+  /* Tablets */
+  @media (max-width: 768px) {
+    .header {
+      padding: 10px 15px;
+    }
+  
+    .logo a {
+      font-size: 20px;
+    }
+  
+    nav .cart-link {
+      font-size: 15px;
+      padding: 8px 12px;
+    }
+  }
+  
+  /* Mobiles */
+  @media (max-width: 480px) {
+    .header {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      gap: 8px;
+    }
+  
+    nav {
+      margin: 0;
+    }
+  
+    .logo a {
+      font-size: 20px;
+    }
+  
+    nav .cart-link {
+      width: 100%;
+      max-width: 220px;
+      font-size: 16px;
+    }
+  }
+  

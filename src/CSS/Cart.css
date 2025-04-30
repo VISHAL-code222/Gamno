@@ -1,0 +1,210 @@
+/* Center and style the cart */
+.cart-container {
+    max-width: 600px;
+    margin: 100px auto 40px; /* Top margin for fixed header space */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Cart title */
+  .cart-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #333;
+  }
+  
+  /* List of cart items */
+  .cart-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Each item card */
+  .cart-container li {
+    background-color: white;
+
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.312);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  /* Item name */
+  .cart-container li h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Item price */
+  .cart-container li p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+  }
+  
+  /* Remove button */
+  .cart-container li button {
+    padding: 6px 10px;
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cart-container li button:hover {
+    background-color: #e04143;
+  }
+  
+  /* Price section */
+  .cart-container div > h3 {
+    margin: 10px 0;
+  }
+  
+  /* Coupon input and button section */
+  .cart-container .coupon-section {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .cart-container input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    min-width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+  
+  .cart-container button {
+    margin-top: 10px;
+    padding: 10px 18px;
+    border: none;
+    background-color: #1e90ff;
+    color: white;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+  }
+  
+  .cart-container button:hover {
+    background-color: #0f70d1;
+  }
+  
+ .cart-container .class-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Adds space between input and button */
+    margin-top: 10px;
+}
+
+.class-btn input {
+    padding: 8px;
+    flex: 1; /* input will grow nicely */
+}
+
+.class-btn button {
+    
+    cursor: pointer;
+}
+
+  /* Success message */
+  .success-message {
+    text-align: center;
+    color: green;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  .pay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* spacing */
+}
+  
+  /* --- Responsive Media Queries --- */
+  
+  /* Tablets */
+  @media (max-width: 768px) {
+    .cart-container {
+      margin: 90px 20px 40px;
+      padding: 16px;
+    }
+  
+    .cart-container h2 {
+      font-size: 24px;
+    }
+  
+    .cart-container li {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 12px 16px;
+    }
+  
+    .cart-container input[type="text"] {
+      width: 100%;
+    }
+  
+    .cart-container button {
+      width: 100%;
+    }
+  }
+  
+  /* Mobiles */
+  @media (max-width: 480px) {
+    .cart-container {
+      margin: 80px 15px 30px;
+      padding: 14px;
+    }
+  
+    .cart-container h2 {
+      font-size: 22px;
+    }
+  
+    .cart-container li {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+      padding: 10px 14px;
+    }
+  
+    .cart-container input[type="text"] {
+      width: 100%;
+    }
+  
+    .cart-container button {
+      width: 100%;
+    }
+  }
+
+  .extra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap:5px ;
+  }
+  .extra h3,p{
+    color: #333;
+  }
+  

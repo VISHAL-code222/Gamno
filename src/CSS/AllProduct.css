@@ -1,0 +1,191 @@
+/* Center the whole page content */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fafafa;
+  }
+  
+  /* Center the button group */
+  .button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 90px auto 60px; /* Centering using auto */
+    width: 100%;
+    max-width: 600px; /* Optional limit for nice centering */
+  }
+  
+  /* Style individual buttons */
+  .btn {
+    padding: 10px 18px;
+    border: none;
+    background-color: #444;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Button hover effect */
+  .btn:hover {
+    background-color: #6eb859da;
+  }
+  
+  /* Center the product cards container */
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  /* Grid for product cards */
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  /* Style each product card */
+  li {
+    background-color: #f9f9f9;
+    padding: 12px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;         /* Fixed width */
+    height: 250px;        /* Fixed height (same as width) */
+    overflow: hidden;     /* If content overflows */
+  }
+  
+  li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Product title */
+  li h1 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  /* Product price */
+  li h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Add to Cart button */
+  li button {
+    padding: 8px 14px;
+    border: none;
+    background-color: #1e90ff;
+    color: white;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  li button:hover {
+    background-color: #0f70d1;
+    transform: scale(1.05);
+  }
+  
+  
+  
+  /* --- Responsive Media Queries --- */
+  
+  /* For Tablets (medium screens) */
+  @media (max-width: 768px) {
+    .button-group {
+      gap: 10px;
+      margin: 90px 0 25px;
+    }
+  
+    ul {
+      gap: 20px;
+    }
+  
+    li {
+      width: 220px;
+      padding: 18px;
+    }
+  
+    li h1 {
+      font-size: 18px;
+    }
+  
+    li h2 {
+      font-size: 16px;
+    }
+  
+    li button {
+      font-size: 14px;
+      padding: 8px 14px;
+    }
+  }
+  
+  /* For Mobile (small screens) */
+  @media (max-width: 480px) {
+    .button-group {
+      flex-direction: column;
+      margin: 80px 0 20px;
+    }
+  
+    .btn {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    ul {
+      gap: 15px;
+    }
+  
+    li {
+      width: 90%;
+      min-width: 250px;
+      padding: 16px;
+    }
+  
+    li h1 {
+      font-size: 17px;
+    }
+  
+    li h2 {
+      font-size: 15px;
+    }
+  
+    li button {
+      font-size: 14px;
+      width: 100%;
+    }
+  }
+  
+  
